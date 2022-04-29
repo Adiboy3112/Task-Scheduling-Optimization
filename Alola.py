@@ -84,8 +84,13 @@ def ALOLA():
 #driver code
 ComputeCost()
 ALOLA()
+print("The current service level of tasks are")
+sum=0
 for i in range(n):
   print(csl[i])
+  sum+=QoS[i][csl[i]]
+
+print("The net QOS is ",sum)
 
 
 
